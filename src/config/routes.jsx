@@ -2,7 +2,6 @@ import Dashboard from '../modules/Dashboard/Dashboard';
 import Tovar from '../modules/Tovar/Tovar';
 import Korzina from '../modules/Korzina/Korzina';
 import AI from '../modules/AI/AI';
-import About from '../modules/About/About';
 
 export const appRoutes = () => {
   return [
@@ -26,10 +25,5 @@ export const appRoutes = () => {
       path: "/ai-helper",
       element: <AI />,
     },
-    {
-      id: 5,
-      path: "/about",
-      element: <About />,
-    }
   ];
 };

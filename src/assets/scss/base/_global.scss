@@ -6,7 +6,10 @@
 
 body{
   background: $body;
+  
 }
+
+
 
 h1,
 h2,
@@ -14,11 +17,13 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "Montserrat", sans-serif !important; 
   margin: 0;
   padding: 0;
 }
 
 p {
+  font-family: "Montserrat", sans-serif !important; 
   margin: 0;
   padding: 0;
 }
@@ -29,19 +34,23 @@ ol {
 }
 
 button {
+  font-family: "Montserrat", sans-serif !important; 
   border: none;
   cursor: pointer;
 }
 
 a {
+  font-family: "Montserrat", sans-serif !important; 
   text-decoration: none;
 }
 
 input {
+  font-family: "Montserrat", sans-serif !important; 
   outline: none;
 }
 
 select {
+  font-family: "Montserrat", sans-serif !important; 
   outline: none;
   cursor: pointer;
 }

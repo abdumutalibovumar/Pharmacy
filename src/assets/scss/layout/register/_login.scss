@@ -5,7 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("https://i.pinimg.com/736x/c5/e0/ff/c5e0ff22069027ec22fbe53c6b10c4e6.jpg")
+  // background: url("https://i.pinimg.com/736x/c5/e0/ff/c5e0ff22069027ec22fbe53c6b10c4e6.jpg")
+  //   no-repeat center center fixed;
+    background: url('/src/assets/images/bg.jpg')
     no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
@@ -70,7 +72,7 @@
       width: 80%;
       height: 68px;
       border-radius: 14px;
-      background: $blue;
+      background: #46af6c;
       color: $white;
       font-family: Roboto;
       font-size: 24px;
