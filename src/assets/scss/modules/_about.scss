@@ -1,0 +1,132 @@
+.about-us {
+  padding: 60px 30px;
+  background: linear-gradient(135deg, #f9fbff, #ffffff);
+  margin-left: 250px;
+  font-family: 'Segoe UI', sans-serif;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  &__text {
+    flex: 1;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #005fa3;
+    }
+    h3 {
+      margin-top: 25px;
+      font-size: 22px;
+      color: #0077cc;
+    }
+    p, ul {
+      margin-bottom: 15px;
+      line-height: 1.7;
+      color: #444;
+    }
+    ul {
+      padding-left: 20px;
+      li {
+        list-style: disc;
+      }
+    }
+    a {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+  }
+
+  &__contact-btn a {
+    display: inline-block;
+    background: #0077cc;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    &:hover {
+      background: #005fa3;
+    }
+  }
+
+  &__image-card {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .about-us__team-info {
+      h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #005fa3;
+      }
+      p {
+        color: #555;
+        margin-bottom: 15px;
+      }
+    }
+    .about-us__features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      strong {
+        display: block;
+        font-weight: 600;
+        color: #333;
+      }
+      span {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e6f2ff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    h5 {
+      font-size: 18px;
+      color: #005fa3;
+    }
+    a {
+      color: #0077cc;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 280px;
+  padding-right: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home__wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.routes {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}

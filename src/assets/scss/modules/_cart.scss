@@ -1,0 +1,218 @@
+.korzina-content {
+  padding: 2rem;
+  min-height: 80vh;
+  background-color: #f2f4f7;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  .cart-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+    .cart-item {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 10px;
+        border: 1px solid #e0e0e0;
+      }
+
+      .item-details {
+        flex: 1;
+
+        h3 {
+          margin: 0;
+          font-size: 1.25rem;
+          color: #111;
+        }
+
+        p {
+          margin: 0.3rem 0;
+          color: #666;
+          font-size: 0.95rem;
+        }
+
+        .price {
+          font-weight: 600;
+          color: #000;
+          font-size: 1rem;
+        }
+      }
+
+      button {
+        background-color: #ff4d4f;
+        border: none;
+        color: #fff;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background-color: #d9363e;
+        }
+      }
+    }
+  }
+
+  .cart-summary {
+    text-align: right;
+    margin-top: 1rem;
+    gap: 30px;
+
+    h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    button {
+      background-color: #1677ff;
+      border: none;
+      color: white;
+      padding: 0.7rem 1.4rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: #0958d9;
+      }
+
+      &.checkout-button {
+        background-color: #52c41a;
+
+        &:hover {
+          background-color: #389e0d;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+}
+
+// ===== Delivery Form Style =====
+.delivery-form {
+  margin-top: 30px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: #1677ff;
+      background-color: #fff;
+    }
+  }
+
+  .payment-methods {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+
+    button {
+      padding: 10px 20px;
+      background: #00a86b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #007f50;
+      }
+    }
+  }
+
+  .qr-code {
+    margin-top: 20px;
+    text-align: center;
+
+    img {
+      width: 160px;
+      height: 160px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+  }
+
+  .confirm-order {
+    margin-top: 25px;
+    padding: 12px 22px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4BB543;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
